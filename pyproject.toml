@@ -1,0 +1,43 @@
+[project]
+name = "kdtalker-lipsync"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "syahrulhamdani",email = "23093968+syahrulhamdani@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "torch (>=2.7.1,<2.8.0)",
+    "torchvision (>=0.22.1,<0.23.0)",
+    "torchaudio (>=2.7.1,<2.8.0)",
+    "accelerate (==0.23.0)",
+    "librosa (==0.11.0)",
+    "opencv-python-headless (==4.12.0.88)",
+    "ffmpeg-python (==0.2.0)",
+    "transformers (==4.54.0)",
+    "tokenizers (==0.21.2)",
+    "imageio[ffmpeg] (>=2.37.0,<2.38.0)",
+    "tyro (>=0.9.26,<0.10.0)",
+    "pydub (>=0.25.1,<0.26.0)",
+    "pykalman (>=0.10.1,<0.11.0)",
+    "dlib (==20.0.0)",
+    "onnxruntime (>=1.22.1,<1.23.0)",
+    "onnx (>=1.18.0,<1.19.0)",
+    "scikit-image (>=0.25.2,<0.26.0)",
+    "einops (>=0.8.1,<0.9.0)",
+    "diffusers (>=0.34.0,<0.35.0)",
+    "einops-exts (==0.0.4)",
+    "rotary-embedding-torch (>=0.8.9,<0.9.0)",
+    "omegaconf (>=2.3.0,<3.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.12.5"
+isort = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
